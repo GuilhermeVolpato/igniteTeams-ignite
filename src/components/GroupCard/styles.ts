@@ -1,6 +1,6 @@
 import { TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
-import { MaterialIcons } from "@expo/vector-icons";
+import { FontAwesome  } from "@expo/vector-icons";
 
 export const Container = styled(TouchableOpacity)`
   width: 100%;
@@ -22,8 +22,8 @@ export const Title = styled.Text`
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
 `;
 
-export const Icon = styled(MaterialIcons).attrs(({ theme }) => ({
-  size: 32,
+export const Icon = styled( FontAwesome ).attrs(({ theme }) => ({
+  size: 25,
   color: theme.COLORS.GREEN_700,
   name: "group",
 }))`

@@ -3,11 +3,10 @@ import { CaretLeft } from "phosphor-react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 export const Container = styled.View`
-  width: 90%;
+  width: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
 `;
 
 export const Logo = styled.Image`
