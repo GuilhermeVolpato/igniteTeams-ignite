@@ -1,4 +1,3 @@
-import { Groups } from "@screens/Groups";
 import { ThemeProvider } from "styled-components/native";
 import {
   useFonts,
@@ -7,7 +6,10 @@ import {
 } from "@expo-google-fonts/roboto";
 import { StatusBar, SafeAreaView } from "react-native";
 
+import { Groups } from "@screens/Groups";
 import { Loading } from "@components/Loading";
+import { NewGroup } from "@screens/NewGroup";
+import { Players } from "@screens/Players";
 import theme from "./src/theme";
 
 
@@ -17,7 +19,7 @@ export default function App() {
   return (
     <SafeAreaView style={{flex:1}}>
       <ThemeProvider theme={theme}>
-        {fontsLoaded ? <Groups /> : <Loading />}
+        {fontsLoaded ? <Players /> : <Loading />}
         <StatusBar 
         barStyle='light-content'
         />
