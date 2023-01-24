@@ -2,14 +2,14 @@ import { Container, Tittle, Subtittle } from "./styles";
 
 type Props = {
     title: string;
-    subtittle: string;
+    subtitle: string;
 }
 
-export function Highlight({title, subtittle}: Props) {
+export function Highlight({title, subtitle}: Props) {
   return (
     <Container>
       <Tittle> { title } </Tittle>
-      <Subtittle> { subtittle } </Subtittle>
+      <Subtittle> { subtitle } </Subtittle>
     </Container>
   );
 }
