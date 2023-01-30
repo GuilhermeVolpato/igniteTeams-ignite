@@ -19,7 +19,7 @@ export default function App() {
   return (
     <SafeAreaView style={{flex:1}}>
       <ThemeProvider theme={theme}>
-        {fontsLoaded ? <Players /> : <Loading />}
+        {fontsLoaded ? <Groups /> : <Loading />}
         <StatusBar 
         barStyle='light-content'
         />
