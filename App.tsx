@@ -12,18 +12,15 @@ import { NewGroup } from "@screens/NewGroup";
 import { Players } from "@screens/Players";
 import theme from "./src/theme";
 
+import { Routes } from "./src/routes";
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
 
   return (
-    <SafeAreaView style={{flex:1}}>
-      <ThemeProvider theme={theme}>
-        {fontsLoaded ? <Groups /> : <Loading />}
-        <StatusBar 
-        barStyle='light-content'
-        />
-      </ThemeProvider>
-    </SafeAreaView>
+    <ThemeProvider theme={theme}>
+      {fontsLoaded ? <Routes /> : <Loading />}
+      <StatusBar barStyle="light-content" />
+    </ThemeProvider>
   );
 }
